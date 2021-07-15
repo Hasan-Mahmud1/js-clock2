@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        padding: 10px;
+        text-align: center;
+        color: aqua;
+        background-color: #444;
+    }
+</style>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        var myVar = setInterval(myTimer ,1000);
+        function myTimer() {
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>
